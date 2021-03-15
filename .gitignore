@@ -5,6 +5,16 @@
 /.pnp
 .pnp.js
 
+# secret stuff
+./firebase.js
+/src/secret
+./src/secret
+./src/secret/firebase.js
+.firebaserc
+/firebase.json
+firebase.json
+
+
 # testing
 /coverage
 

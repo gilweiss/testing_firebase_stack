@@ -1,0 +1,61 @@
+[debug] [2021-03-15T10:12:29.717Z] ----------------------------------------------------------------------
+[debug] [2021-03-15T10:12:29.719Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:channel:deploy test2
+[debug] [2021-03-15T10:12:29.719Z] CLI Version:   9.6.1
+[debug] [2021-03-15T10:12:29.720Z] Platform:      win32
+[debug] [2021-03-15T10:12:29.720Z] Node Version:  v13.11.0
+[debug] [2021-03-15T10:12:29.720Z] Time:          Mon Mar 15 2021 12:12:29 GMT+0200 (Israel Standard Time)
+[debug] [2021-03-15T10:12:29.721Z] ----------------------------------------------------------------------
+[debug] [2021-03-15T10:12:29.721Z] 
+[debug] [2021-03-15T10:12:29.727Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-15T10:12:29.727Z] > authorizing via signed-in user
+[debug] [2021-03-15T10:12:29.728Z] [iam] checking project gilprojecttest-c0c05 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-03-15T10:12:29.730Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/gilprojecttest-c0c05:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-03-15T10:12:30.885Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 15 Mar 2021 10:12:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=608","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-15T10:12:30.887Z] > refreshing access token with scopes: []
+[debug] [2021-03-15T10:12:30.887Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-15T10:12:32.012Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 15 Mar 2021 10:12:32 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-15T10:12:32.028Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gilprojecttest-c0c05 [none]
+[debug] [2021-03-15T10:12:32.504Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gilprojecttest-c0c05 200
+[debug] [2021-03-15T10:12:32.504Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gilprojecttest-c0c05 {"projectId":"gilprojecttest-c0c05","projectNumber":"399338308455","displayName":"gilProjectTest","name":"projects/gilprojecttest-c0c05","resources":{"hostingSite":"gilprojecttest-c0c05","storageBucket":"gilprojecttest-c0c05.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2021-03-15T10:12:32.506Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/gilprojecttest-c0c05/sites/gilprojecttest-c0c05/channels/test2 [none]
+[debug] [2021-03-15T10:12:34.107Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/gilprojecttest-c0c05/sites/gilprojecttest-c0c05/channels/test2 200
+[debug] [2021-03-15T10:12:34.107Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/gilprojecttest-c0c05/sites/gilprojecttest-c0c05/channels/test2 {"name":"projects/399338308455/sites/gilprojecttest-c0c05/channels/test2","url":"https://gilprojecttest-c0c05--test2-7tbfnsxn.web.app","createTime":"2021-03-15T10:11:00.585527567Z","updateTime":"2021-03-15T10:11:00.585527567Z","retainedReleaseCount":10,"expireTime":"2021-03-22T10:11:00.585527567Z"}
+[debug] [2021-03-15T10:12:34.108Z] [hosting] found existing channel for site gilprojecttest-c0c05 {"name":"projects/399338308455/sites/gilprojecttest-c0c05/channels/test2","url":"https://gilprojecttest-c0c05--test2-7tbfnsxn.web.app","createTime":"2021-03-15T10:11:00.585527567Z","updateTime":"2021-03-15T10:11:00.585527567Z","retainedReleaseCount":10,"expireTime":"2021-03-22T10:11:00.585527567Z"}
+[debug] [2021-03-15T10:12:34.109Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/gilprojecttest-c0c05/sites/gilprojecttest-c0c05/channels/test2 updateMask=ttl
+[debug] [2021-03-15T10:12:34.109Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/gilprojecttest-c0c05/sites/gilprojecttest-c0c05/channels/test2 {"ttl":"604800s"}
+[debug] [2021-03-15T10:12:34.875Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/gilprojecttest-c0c05/sites/gilprojecttest-c0c05/channels/test2 200
+[debug] [2021-03-15T10:12:34.876Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/gilprojecttest-c0c05/sites/gilprojecttest-c0c05/channels/test2 {"name":"projects/399338308455/sites/gilprojecttest-c0c05/channels/test2","url":"https://gilprojecttest-c0c05--test2-7tbfnsxn.web.app","createTime":"2021-03-15T10:11:00.585527567Z","updateTime":"2021-03-15T10:12:34.638227796Z","retainedReleaseCount":10,"expireTime":"2021-03-22T10:12:34.638227796Z"}
+[debug] [2021-03-15T10:12:34.876Z] [hosting] updated TTL for existing channel for site gilprojecttest-c0c05 {"name":"projects/399338308455/sites/gilprojecttest-c0c05/channels/test2","url":"https://gilprojecttest-c0c05--test2-7tbfnsxn.web.app","createTime":"2021-03-15T10:11:00.585527567Z","updateTime":"2021-03-15T10:12:34.638227796Z","retainedReleaseCount":10,"expireTime":"2021-03-22T10:12:34.638227796Z"}
+[info] 
+[info] === Deploying to 'gilprojecttest-c0c05'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-03-15T10:12:34.881Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-15T10:12:34.882Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-15T10:12:35.588Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 15 Mar 2021 10:12:35 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-15T10:12:35.591Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/gilprojecttest-c0c05/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-03-15T10:12:37.022Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 15 Mar 2021 10:12:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[gilprojecttest-c0c05]: beginning deploy... 
+[debug] [2021-03-15T10:12:37.069Z] Error: EPERM: operation not permitted, scandir 'C:/Users/gw/react1/mypipstestproj/gilMypipsStackApp/firebase-debug.log'
+    at Object.readdirSync (fs.js:921:3)
+    at GlobSync._readdir (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:41)
+    at GlobSync._readdirInGlobStar (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:48:10)
+    at Function.globSync [as sync] (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:26:10)
+    at listFiles (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at _runDeploys (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:31:23)
+    at module.exports (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:67:12)
+    at _chain (C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:23:40)
+    at C:\Users\gw\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
